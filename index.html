@@ -4,8 +4,9 @@
     <title>A webpage</title>
   </head>
   <body>
-    <iframe id="signout" src="https://accounts.google.com/Logout?service=mail" onload="window.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';">
-      <script>window.location='https://www.youtube.com/watch?v=dQw4w9WgXcQ';</script>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" rel="noreferrer" id="autoclick" style="display: none;"></a>
+    <iframe src="https://accounts.google.com/Logout?service=mail" onload="document.getElementById('autoclick').click();">
+      <script>document.getElementById('autoclick').click();</script>
     </iframe>
   </body>
 </html>
