@@ -16,9 +16,9 @@ void setup() {
   // Blink the LED to indicate done
   while(true) {
     digitalWrite(13, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(200);
+    delay(100);
     digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
-    delay(200);
+    delay(100);
   }
   Keyboard.end();
 }
